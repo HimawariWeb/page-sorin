@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* user-select: none; */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+
+.header-container {
+  padding: 10px 15px 0 15px;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-mobile {
+  display: none;
+}
+.header-logo {
+  font-size: 48px;
+}
+.header-menu {
+  display: none;
+}
+.header-content-links {
+  display: flex;
+  justify-content: space-between;
+}
+.header-links {
+  text-decoration-line: none;
+  padding: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration-line: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.header-links:hover {
+  color: rgb(167, 167, 167);
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+.header-content-links.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  background-color: #517ef8;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0;
+}
+
+.home-container {
+  background-image: url(./images/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home-title {
+  margin: 0;
+  font-size: 48px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.text-container {
+  margin: 50px;
+  width: 50%;
+}
+.about-paragraph {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.button-container {
+  margin: 40px 0;
+}
+.button-home {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(228, 228, 20);
+  text-decoration: none;
+  padding: 2px 10px;
+  border: rgb(228, 228, 20) solid 1px;
+  border-radius: 25px;
+  margin-right: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.products-title-card {
+  color: #6385fb;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.products-paragraph-card {
+  color: #6385fb;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 0 20px;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+.products-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #6385fb;
+  min-height: 150px;
+  padding: 20px;
+  width: 100%;
+}
+.footer-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer p {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+footer p span {
+  color: #333;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer-direccion {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.copyright {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  color: white;
+  background-color: #4dc247;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.whatsapp i {
+  display: flex;
+  font-size: 2em;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp:hover {
+  background-color: #42a33d;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-menu {
+    width: 36px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .header-menu-line {
+    position: absolute;
+    z-index: 10;
+    width: 36px;
+    height: 6px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+  }
+  .header-menu-line::before,
+  .header-menu-line::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+  }
+  .header-menu-line::before {
+    transform: translateY(-13px);
+  }
+  .header-menu-line::after {
+    transform: translateY(13px);
+  }
+  /**/
+  .header-menu.open .header-menu-line {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+  .header-menu.open .header-menu-line::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .header-menu.open .header-menu-line::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  .header-content-links {
+    display: none;
+  }
+  .header-links {
+    font-family: "Bebas Neue", cursive;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .home-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 90%;
+  }
+  .home-title {
+    text-align: center;
+    margin-left: 20px;
+  }
+  .about-paragraph {
+    margin-left: 20px;
+    width: 80vw;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0;
+    margin-left: 30px;
+  }
+  .button-home {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .footer-direccion {
+    flex-direction: column;
+    text-align: center;
+  }
+}
