@@ -17,6 +17,7 @@ body {
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
+
 .equipamiento-title {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -68,6 +69,12 @@ body {
   font-family: "Roboto", sans-serif;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   margin: 20px;
+  text-align: center;
+}
+@media (min-width: 765px) {
+  .products__paragraph-card{
+    text-align: left;
+  }
 }
 
 .products-title.contacto {
