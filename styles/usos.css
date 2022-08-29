@@ -31,9 +31,9 @@ body {
 }
 .products__card-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
-  margin: 15px;
+  margin: 40px;
   margin-top: 0;
   flex-wrap: wrap;
 }
@@ -44,6 +44,7 @@ body {
   background-color: rgba(85, 153, 255, 0.8);
   border-radius: 43px;
   padding: 20px;
+  align-items: center;
 }
 .products__card div {
   width: 100%;

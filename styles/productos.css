@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin: 15px;
+  margin: 40px;
   margin-top: 0;
   flex-wrap: wrap;
 }
