@@ -115,8 +115,7 @@ textarea:focus {
   padding: 10px;
   gap: 20px;
 }
-.oficinas__maps {
-  width: 277px;
+iframe {
   border-radius: 10px;
 }
 a {
