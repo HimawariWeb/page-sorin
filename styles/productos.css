@@ -84,7 +84,6 @@ body {
   }
   .products__card {
     flex-direction: column;
-    width: 100%;
   }
   .products__image-card {
     align-self: center;
