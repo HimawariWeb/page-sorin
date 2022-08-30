@@ -84,12 +84,13 @@ body {
   }
   .products__card {
     flex-direction: column;
-    width: auto;
+    width: 100%;
   }
   .products__image-card {
     align-self: center;
     width: 280px;
     margin-top: 5px;
+    object-fit:cover;
   }
   .products__paragraph-card{
     margin: 20px 10px;

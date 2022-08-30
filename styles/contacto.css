@@ -115,7 +115,7 @@ textarea:focus {
   padding: 10px;
   gap: 20px;
 }
-#mapDiv {
+html, body, #mapDiv {
   border-radius: 10px;
 }
 a {
