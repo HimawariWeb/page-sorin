@@ -39,7 +39,7 @@ body {
 }
 .products__card {
   display: flex;
-  width: 100vw;
+  width: 100%;
   min-height: 260px;
   background-color: rgba(85, 153, 255, 0.8);
   border-radius: 43px;
